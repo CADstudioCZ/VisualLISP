@@ -8,6 +8,8 @@ Various freeware LISP tools for AutoCAD:
 
 **COG3D.LSP** - display center of gravity point for solids and regions
 
+**CMDtimer.LSP** - reactor-based timing of AutoCAD commands - track execution time of native commands
+
 
 More freeware tools available on http://www.cadstudio.cz/freeware and on http://www.cadforum.cz
 
