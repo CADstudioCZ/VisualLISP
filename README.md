@@ -12,6 +12,8 @@ Various freeware LISP tools for AutoCAD:
 
 **CMDtimer.LSP** - reactor-based timing of AutoCAD commands - track execution time of native commands
 
+**Txt2Ref.LSP** - replaces drawing texts with block references of the same name
 
-More freeware tools available on https://www.cadstudio.cz/freeware and on https://www.cadforum.cz (and follow CAD Studio on Facebook)
+
+More freeware tools available on https://www.cadstudio.cz/freeware and on https://www.cadforum.cz (and follow CAD Studio on Facebook - @CADstudio)
 
