@@ -14,6 +14,10 @@ Various freeware LISP tools for AutoCAD:
 
 **Txt2Ref.LSP** - replaces drawing texts with block references of the same name
 
+**mPDFimport.LSP** - import multiple pages from a PDF file
 
-More freeware tools available on https://www.cadstudio.cz/freeware and on https://www.cadforum.cz (and follow CAD Studio on Facebook - @CADstudio)
+**SelectSimilar.LSP** - extended version of the SelectSimilar command, also for LT and AutoCAD web app
+
+
+More freeware tools available on https://www.cadforum.cz (and follow ARKANCE CZ / CAD Studio on LinkedIn and on Facebook - @ArkanceCZ)
 
