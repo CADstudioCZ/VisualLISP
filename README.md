@@ -18,6 +18,9 @@ Various freeware LISP tools for AutoCAD:
 
 **SelectSimilar.LSP** - extended version of the SelectSimilar command, also for LT and AutoCAD web app
 
+**ScaleArea.LSP** - scale object (polygon) relatively to achieve target area
 
-More freeware tools available on https://www.cadforum.cz (and follow ARKANCE CZ / CAD Studio on LinkedIn and on Facebook - @ArkanceCZ)
+
+Hundreds of other freeware tools available on https://www.cadforum.cz
+(and follow ARKANCE CZ / CAD Studio on LinkedIn and on Facebook - @ArkanceCZ)
 
