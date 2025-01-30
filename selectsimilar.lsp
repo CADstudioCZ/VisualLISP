@@ -15,9 +15,6 @@
 ;4096 curve length (not used in AutoCAD)
 ;8192 area (not used in AutoCAD)
 
-;add: inherited match - ByLayer and layer properties (1,4,8,16,32)
-;--------------------------------------------------------------------------------------
-
 (if (not _SelectSimilarVar)(setq _SelectSimilarVar "SELECTSIMILARMODE"))
 (if (not (getvar "SELECTSIMILARMODE"))(setq _SelectSimilarVar "USERI2")) ; Web + old ACADs
 ;(setq _SelectAnyObject T) ; preselect no object type filter
@@ -104,7 +101,7 @@
   (if (= prop "Length")
    (if (not (vl-catch-all-error-p (vl-catch-all-apply 'getpropertyvalue (list ent prop)))) ; if exists
 	(if _SelectNegative
-	 (if (= (getpropertyvalue ent prop) LengthF)(ssdel ent ss)) ; if same, remove  (rather: (equal A B fuzz))
+	 (if (= (getpropertyvalue ent prop) LengthF)(ssdel ent ss)) ; if same, remove
 	 (if (/= (getpropertyvalue ent prop) LengthF)(ssdel ent ss)) ; if differs, remove
 	)
 	(if _SelectNegative (ssdel ent ss)) ; if not exists, also
@@ -258,9 +255,7 @@ lst
 
 
 ;-------------------- MAIN -----------------------------------------------------
- ;(setq inWeb (wcmatch (getvar "PLATFORM") "* 0.0 *")) ; unreliable!!
- (setq inWeb (or (not (getvar "_VERNUM"))(> (strlen (getvar "_VERNUM")) 25)))
- ;(setq inWeb T)
+ (setq inWeb (wcmatch (getvar "PLATFORM") "* 0.0 *"))
  (if (not inWeb)(vl-load-com))
  (if (not _SelectSimilarMode)(setq _SelectSimilarMode 0))
  (princ "\nSource object(s): ")
